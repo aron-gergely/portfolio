@@ -4,6 +4,37 @@ body {
   background-color: black;
 }
 
+/* Header styles */
+#header {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+#header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#header .subtitle {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+#header small {
+  display: block;
+  font-size: 0.9em;
+  margin-top: 4px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Gallery styles */
 #gallery {
   display: flex;
   flex-direction: column;
@@ -16,20 +47,29 @@ body {
   width: auto;
   height: auto;
   display: block;
-  margin: 20px 0; /* 20px vertical spacing */
+  margin-bottom: 40px;
+  margin-left: 0;
+  margin-right: 0;
   outline: 1px solid hsl(0, 0%, 31%);
 }
 
 /* Mobile: screens 768px and below */
 @media (max-width: 768px) {
   #gallery {
-    padding: 0 10px; /* 10px horizontal padding around images */
+    padding: 0 10px;
   }
 
   #gallery img {
     width: 100%;
     max-width: 100%;
-    margin: 5px 0; /* 10px vertical spacing */
+    margin-bottom: 10px;
+    margin-right: 0;
+    margin-left: 0;
     outline: 1px solid hsl(0, 0%, 31%);
+  }
+
+  #header {
+    width: 100%;
+    padding: 0 10px;
   }
 }
